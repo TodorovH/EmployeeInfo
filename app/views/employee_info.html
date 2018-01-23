@@ -1,0 +1,21 @@
+<div>
+	<h3>Enter Employee First Name or Surname</h3>
+	<input type="text" keyboard-poster id="selectedId" post-function="getNames" name="name" placeholder="Enter first or surname..." list="names" style='margin-bottom:100px'>
+        <datalist id="names">
+             <select style="display: none;" id="_select" name="_select" ng-model='selectedId' ng-options='n.id as n.name for n in names track by n.id'></select>
+		</datalist>
+	<button id="info-btn" class="btn" ng-click="getInfo()">Get Employee Info</button>
+
+	<div id="info-container">
+		<div id="full-name" ng-model="fullName">{{ fullName }}</div>
+		<h4>Take Home</h4>
+		<div ng-model="takeHome">{{ takeHome }}</div>
+		<hr>
+		<h4>Income Tax</h4>
+		<div ng-model="incomeTax">{{ incomeTax }}</div>
+		<hr>
+		<h4>National Insurance</h4>
+		<div ng-model="nationalInsurance">{{ nationalInsurance }}</div>
+		<hr>
+	</div>
+</div>

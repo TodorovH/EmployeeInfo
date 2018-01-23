@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="FourthEmployeeInfoApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>Fourth Employees Info App</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="container">
+			<div>
+				<h1>Employee Info App</h1>
+			</div>
+			<div ng-view ng-class='viewsContainer'>
+		
+			</div>
+		</div>
+		
+		<script src="lib/angular.min.js"></script>
+		<script src="lib/angular-route.js"></script>
+		<script src="lib/jquery-3.2.1.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controllers/HomeController.js"></script>
+		<script src="controllers/EmployeeInfoController.js"></script>
+		<script src="services/GetNamesService.js"></script>
+		<script src="services/GetInfoService.js"></script>
+		<script src="directives/keyboardPoster.js"></script>
+
+	</body>
+</html>
